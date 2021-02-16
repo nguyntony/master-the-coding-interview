@@ -95,5 +95,7 @@ A common example of this type of big O is a nested loop. Unlike O(n), nested loo
 ## 🌱 Factorial O(n!)
 Also known as the “oh no”. This means that there is a nested loop for every input, this is commonly seen in the real world but you should still be aware of it. 
 
-
-
+## 🌱 Helpful Resources
+| Link                                                                | Description                                                                |
+|---------------------------------------------------------------------|----------------------------------------------------------------------------|
+| [Developer Insider](https://developerinsider.co/big-o-notation-explained-with-examples/) | Really useful article to see the different Big O Notation and explanations |
