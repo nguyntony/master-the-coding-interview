@@ -1,7 +1,7 @@
 # Big O Notation
 #algo
 
-## 🧐 What is it? 
+## 🌱 What is it? 
 It is the language that developers use to measure how long it takes for an algorithm to run (regardless of computer/hardware differences).
 
 ### Scalability
@@ -22,7 +22,7 @@ Data structures are ways to store data and algorithms are ways to do something w
 
 There are best data structures and algorithms for different scenarios. 
 
-## Simplifying Big O
+## 🌱 Simplifying Big O
 1. Worst case 
 2. Remove constants
 3. Different terms for inputs
@@ -61,7 +61,7 @@ When simplifying, we should keep the dominant term and drop the others. We shoul
 
 The `x^2` is the most dominant term here because it’s scalability is the greatest, the larger the number (x) the scalability increases greatly compared to the other terms. 
 
-## Constant time O(1)
+## 🌱 Constant time O(1)
 If there is an algorithm that only does one operation. This differs from linear time from that the linear time increase as the input increase, this big O notation will not increase as the input increases. 
 
 ```
@@ -78,22 +78,22 @@ That is the difference between constant time and linear time, constant time is t
 
 O(1) - the formula to describe constant time
 
-## Linear O(n)
+## 🌱 Linear O(n)
 `As the number of our inputs increase the number of operations increase` (ie. a single loop, if there are 5 items in the array that we are looping over then it will take 5 operations).
 
 #### Terms
 - O(n) - the formula to describe linear time
 - Linear time - another word to describe the big O notation 
 
-## Quadratic O(n^2) 
+## 🌱 Quadratic O(n^2) 
 A common example of this type of big O is a nested loop. Unlike O(n), nested loops will be result in multiplying the variable, (if the variable if the same, meaning the fn takes one input )
 
 #### Terms
 - O(n^2)
 - Quadratic time - another word to describe this big O
 
-## O(n!)
-This means that there is a nested loop for every input. 
+## 🌱 Factorial O(n!)
+Also known as the “oh no”. This means that there is a nested loop for every input, this is commonly seen in the real world but you should still be aware of it. 
 
 
 
