@@ -93,7 +93,27 @@ A common example of this type of big O is a nested loop. Unlike O(n), nested loo
 - Quadratic time - another word to describe this big O
 
 ## 🌱 Factorial O(n!)
-Also known as the “oh no”. This means that there is a nested loop for every input, this is commonly seen in the real world but you should still be aware of it. 
+Also known as the “oh no”. This means that there is an added nested loop for every input, this is not commonly seen in the real world but you should still be aware of it. 
+
+## 🌱 Space Complexity (Memory)
+There are two ways to remembers things:
+1. Heap - this is usually where you store variable assignment 
+2. Stack - this is where you keep track of function call, the variables inside of the stack  will get deleted after the function is finished. 
+When you are trying to do a function call there is a stack frame that is allocated, variables are defined in the stack frame, the function finishes and the stack frame disappears. 
+
+You can look at total size of memory being used compared to the input. 
+
+#### What causes space complexity?
+- variables
+- data structures
+- function call
+- allocations
+
+#### Primitive vs Non Primitive (or Complex / Reference Types)
+- Primitive (ie. Numbers like 5 and 3.15, boolean, strings) - these are stored in the stack until they need to be moved to the heap, because they may need to grow or shrink. They are often seen as something that you can create a `new` type. 
+- Non Primitive (ie. Objects, arrays, functions, anything you create using the `new` keyword) - these are **mutable**, you can add and remove elements from an array, functions are kinds of objects, they are objects that are callable (that’s what they call it in python), they are **indexable** and **callable**. 
+
+Apparently you can create a new String and Number, once you start to use string methods then you are using the non-primitive or complex type of the string. This usually occurs when you want to use more advanced things of the string. 
 
 ## 🌱 Helpful Resources
 | Link                                                                | Description                                                                |
