@@ -28,5 +28,5 @@ const firstRecurringCharacter = arr => {
 }
 
 console.log(firstRecurringCharacter([2,8,5,2]))
-console.log(firstRecurringCharacter([2,1,1]))
+console.log(firstRecurringCharacter([2,1,1,2]))
 console.log(firstRecurringCharacter([1,2,3,4]))
