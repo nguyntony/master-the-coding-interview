@@ -26,14 +26,20 @@ What can linked list offer that arrays and hash tables do not?
 #### Pros
 - allows you to insert a value into the middle of the list by resetting few pointers. Unlike with an array, if you insert or delete something in the middle of the array, it will cause a shift because it is ordered but with linked lists, that will not occur. 
 - although the memory is stored at different memory addresses unlike hash tables there is some sort of order which means that you can order better than hash tables. 
+- fast insertion
+- fast deletion 
+- ordered
+- flexible size
 
 #### Cons
 - the data in linked lists are scattered so it may take longer to traverse the list versus an array where the data is nearby to one another.  
+- slow lookup
+- more memory
 
 #### TLDR
 Linked lists are better at inserting and deleting values compared to an array. Also the way in which the nodes are stored in memory addresses, there is a pointer so there is some order to the linked lists compared to hash tables. 
 
-## Pointers
+## ☁️ Pointers
 A pointer is a reference to another place in memory, another object or node for example. In JS you can demonstrate it like this:
 - `const obj1 = {a:true}`
 - `const obj2 = obj1`
@@ -41,8 +47,14 @@ You are not creating another entry with a = true, obj1 and obj2 both points to t
 
 JS is a language with automated garbage collection, if there is not a pointer pointing to that value, it will be deleted. 
 
+## ☁️ Doubly Linked Lists
+Similar to the singly linked lists but it links to the node before it. So there are two pointers, not just one that keeps pointing to the next value but another pointer that links to the previous node. 
 
+This is important because it will allow us to traverse our lists backwards. 
 
+## ☁️ Singly vs Doubly
+- singly is appropriate when you are being conscious of memory and it is good for fast insertion and deletion. 
+- doubly requires more memory or storage because of the pointer of the previous property.
 
 
 
