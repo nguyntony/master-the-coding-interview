@@ -93,9 +93,49 @@ class BinarySearchTree {
             if (currentNode.value < parentNode.value) {
               // if the current value is less than the parent value
               parentNode.left = currentNode.left;
+            } else if (currentNode.value > parentNode.value) {
+              parentNode.right = currentNode.left;
+            }
+          }
+        } else if (!currentNode.right.left) {
+          // option 2
+          if (!parentNode) {
+            this.root = currentNode.left;
+          } else {
+            currentNode.right.left = currentNode.left;
+
+            if (currentNode.value < parentNode.value) {
+              parentNode.left = currentNode.right;
+            } else if (currentNode.value > parentNode.value) {
+              parentNode.right = currentNode.right;
+            }
+          }
+        } else {
+          // option 3
+          // find the right child's left most child
+          let leftMost = currentNode.right.left;
+          let leftMostParent = currentNode.right;
+          while (leftMost.left !== null) {
+            leftMostParent = leftMost;
+            leftMost = leftMost.left;
+          }
+
+          leftMostParent.left = leftMost.right;
+          leftMost.left = currentNode.left;
+          leftMost.right = currentNode.right;
+
+          if (parentNode === null) {
+            this.root = leftmost;
+          } else {
+            if (currentNode.value < parentNode.value) {
+              parentNode.left = leftMost;
+            } else if (currentNode.value > parentNode.value) {
+              parentNode.right = leftMost;
             }
           }
         }
+
+        return true;
       }
     }
   }
@@ -118,3 +158,5 @@ tree.insert(161);
 console.log(JSON.stringify(traverse(tree.root)));
 console.log(tree.lookup(161));
 console.log(tree.lookup(11));
+console.log(tree.remove(2));
+console.log(JSON.stringify(traverse(tree.root)));
