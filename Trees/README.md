@@ -58,3 +58,32 @@ This will do the same thing above but will also be identified via red and black 
 Resources
 - [Visual](https://www.cs.usfca.edu/~galles/visualization/RedBlack.html)
 - [Explanation](https://medium.com/basecs/painting-nodes-black-with-red-black-trees-60eacb2be9a5)
+
+## Binary Heap
+Every child belongs to a parent node that is higher than the child. This is called a max heap there is also a min heap. Every node of the top level has a higher value than the level below it. 
+
+#### How do they differ from Binary Trees?
+The left and right value can be any value as long as its less than the parent, in a binary tree the left is the lower value, the right is the higher value. This results in lookup being linear time in binary heap. 
+
+Heaps are used a lot in priority queues or even sort algorithms. 
+
+#### Pros
+- you do not have to balance 
+- left to right insertion (there is some order of insertions)
+- this means that they can take up less memory (space) compared to binary search tree
+- good for priority queue (this is not the same thing as stacks/queue
+
+#### What is priority queue
+Each element has some sort of priority, and those with higher priority will get tended to first than those with lesser priority. This is how it differs from queues where it is FIFO. A real world example would be an emergency room where you tend to the patient with the severe conditions first. 
+
+
+## Trie
+Specialized tree used in search most often with text. another name for trie is prefix tree. You can think of it like autocompletion. The benefit of this data structure is speed and space. 
+
+The BigO is O(length of word). 
+
+
+
+
+
+
