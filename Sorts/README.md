@@ -43,4 +43,18 @@ Choose a pivot that will divide the work evenly as possible
 3. Selection sort - same as above ^ 
 4. Merge sort - really good bc of divide and conquer, best and worst is always O(n log n), which isn’t always the case for other sorting algorithms. However merge sort is expensive in terms of space complexity. 
 5. Quick sort - can be better than merge sort because the best and average case is similar to merge sort and the space complexity is only O(log (n)), but there is a worst case of quadratic but you could put in a little bit of extra work to make sure to find a good pivot to avoid that.
-6. 
+
+## Non comparison sort
+- counting sort
+- radix sort
+These are entirely different ways of thinking about sorting, with the other sorting algorithms that we talked about above is comparing the elements to each other. 
+
+## Prep questions for which sort to use 
+1. Sort 10 schools around your house by distance: insertion since the data is small and I am assuming that the list that is returned will be somewhat sorted.
+2. eBay sorts listings by the current Bid amount: radix or counting since the data is only numbers from 
+3. Sport scores on ESPN: quick sort because the data is large and there are tons of different kinds of numbers
+4. Massive database (can't fit all into memory) needs to sort through past year's user data: merge sort since the worst case for quick sort is quadratic and you’d want to avoid that in all scenarios
+5. Almost sorted Udemy review data needs to update and add 2 new reviews: insertion
+6. Temperature Records for the past 50 years in Canada: quick sort
+7. Large user name database needs to be sorted. Data is very random: quick sort
+8. You want to teach sorting for the first time: bubble sort
