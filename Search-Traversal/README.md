@@ -39,3 +39,7 @@ There are three different ways that you can actually implement depth first searc
 - preorder - from parent node then grab the kids from left to right. This is really useful is you want to recreate a tree. 
 - postorder - starting from the kids then going up to the parent. 
 
+## Finding the shortest path of a weighted graph
+1. Dijkstra - it runs a bit faster but cannot accommodate negative weight. 
+2. Bellman-Ford - effective for the shortest path bc is accommodates for negative weight, can take a long time to run, worst case is quadratic 
+
