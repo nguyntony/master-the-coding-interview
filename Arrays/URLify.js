@@ -28,3 +28,5 @@ function URLify(str) {
 
 console.log(URLify("oneword"));
 console.log(URLify("two words"));
+
+// this solution is linear with some minor pre checking
