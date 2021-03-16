@@ -48,7 +48,7 @@ function moreThanOne(cache1, cache2) {
   // in the event where the lengths are the same, I need to make sure that the frequency of the characters appear the same amount of time, I will only let one difference happen once.
   let once = false;
   for (key in cache1) {
-    if (cache1[key] != cache2[key]) {
+    if (cache1[key] !== cache2[key]) {
       if (!once) {
         once = !once;
       } else {
@@ -64,7 +64,7 @@ function oneEdit(cache1, cache2, length1, length2) {
   let shorter = length1 > length2 ? cache2 : cache1;
   let longer = length1 > length2 ? cache1 : cache2;
   for (key in shorter) {
-    if (shorter[key] != longer[key]) {
+    if (shorter[key] !== longer[key]) {
       return false;
     }
   }
