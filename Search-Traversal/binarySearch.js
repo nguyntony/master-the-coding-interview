@@ -9,11 +9,8 @@ function binarySearch(array, target) {
   let mid = Math.floor((start + end) / 2);
 
   while (array[mid] !== target && start <= end) {
-    if (target < array[mid]) {
-      end = mid - 1;
-    } else {
-      start = mid + 1;
-    }
+    if (target < array[mid]) end = mid - 1;
+    else start = mid + 1;
     mid = Math.floor((start + end) / 2);
   }
   return array[mid] === target ? mid : -1;
@@ -22,6 +19,6 @@ function binarySearch(array, target) {
 console.log(
   binarySearch(
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
-    3
+    0
   )
 );
